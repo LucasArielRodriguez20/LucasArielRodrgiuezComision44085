@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+/*Comienzo de barra de navegacion*/
+nav {
+  display: flex;
+  padding: 1%;
+  background-color: #3f72af;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  height: 5em;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  background-color: #f9f7f7;
+  text-align: center;
+}
+.menuDesplegable{
+  display: none;
+}
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo a {
+  background-color: #3f72af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40%;
+  margin-left: 2em;
+  border-radius: 2vh
+}
+.barraDeBusqueda {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.barra {
+  width: 80%;
+  height: 3em;
+  padding: 1%;
+}
+.btnBusqueda {
+  width: 20%;
+  height: 3em;
+}
+.barraDeBusqueda div {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.barraDeBusqueda div a {
+  width: 48%;
+  height: 2em;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.miCuenta {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.miCuenta a {
+  width: 35%;
+  height: 5em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4vh;
+}
+.miCuenta a img{
+  width: 100%;
+  height: 80%;
+}
+/*Fin de barra de navegacion*/
+/*Comienzo de header*/
+header {
+  height:70vh;
+  display: flex;
+  align-content: center;
+  margin: auto;
+  border-top: #000000 solid 3px;
+}
+header img {
+  width: 100%;
+  height: 20em;
+  margin: auto;
+  z-index: 1;
+}
+/*Fin de header*/
+/*Comienzo de main*/
+main {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+.busquedaMain {
+  display: flex;
+  width: 100%;
+  height: 80em;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+main aside {
+  width: 50%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dbe2ef;
+}
+main aside div {
+  width: 100%;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  justify-content: center;
+}
+main div {
+  width: 26%;
+  height: 50vh;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ofertas a{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.ofertas a h1{
+  width: 100%;
+  height: 2vh;
+}
+.ofertas a img{
+  width: 80%;
+  height:30%;
+  margin-bottom: 6vh;
+}
+.envio a{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.envio a h1{
+  width: 100%;
+  height: 2vh;
+  font-size: 3vh;
+}
+.envio a img{
+  width: 80%;
+  height:20%;
+  margin-bottom: 6vh;
+}
+.cuenta a{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.cuenta a h1{
+  width: 100%;
+  height: 2vh;
+  font-size: 3vh;
+}
+.cuenta a img{
+  width: 80%;
+  height:20%;
+  margin-bottom: 6vh;
+}
+/*index main fin*/
+.busquedaMain section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section div {
+  width: 26%;
+  height:auto;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+.busquedaMain section div figure{
+  width:100%;
+  height:25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.busquedaMain section div figure img{
+  width:50%;
+  height: 13vh;
+}
+.busquedaMain section div figure p{
+  width: 100%;
+  height: 3vh;
+  text-align: center;
+}
+.busquedaMain section div figure figcaption{
+  width: 100%;
+  height: 1vh;
+  text-align: center;
+}
+.menuItems{
+  display: none;
+}
+/*Comienzo de main Nosotros*/
+.nosotrosSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  padding: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nosotrosSection h2 {
+  width: 80%;
+  height: 5%;
+  text-align: center;
+  margin-bottom: 11%;
+  font-size: 5vh;
+}
+.nosotrosSection p {
+  width: 80%;
+  height: auto;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  text-align: justify;
+}
+.nosotrosSection img {
+  width: 100%;
+  height: 80%;
+}
+.nosotrosSection a {
+  background-color: #dbe2ef;
+  width: 50%;
+  height: 10vh;
+  border: solid #000000 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotrosSection h1{
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+/*Fin de main Nosotros*/
+/*Comienzo de main Nuevo usuario*/
+.nuevoUsuarioMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+.nuevoUsuarioSection {
+  width: 50%;
+  height:70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  justify-content: flex-start;
+}
+.nuevoUsuarioSection div {
+  width: 50%;
+  height: 50%;
+}
+.usuarioSection div img {
+  width: 25%;
+  height: 50%;
+}
+.nuevoUsuarioSection form h3 {
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.formularioIngreso {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formularioIngreso input {
+  width: 100%;
+  height: 4%;
+}
+/*Fin de main Nuevo usuario*/
+/*Comienzo de main Inicio de usuario*/
+.usuarioMain {
+  width: 100%;
+}
+.usuarioSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.usuarioSection div {
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 38vh;
+}
+.usuarioSection form {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.usuarioSection form input {
+  width: 50%;
+  height: 15%;
+  text-align: center;
+  border: solid 1px;
+}
+/*Fin de main Inicio de usuario*/
+/*Comienzo de main Contacto*/
+.contactoMain {
+  width: 100%;
+  height: auto;
+}
+.contactoSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactoSection div {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.contactoHorario{
+  height:12vh;
+}
+.informacionContacto{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.informacionContacto p{
+  width: 100%;
+  height: 15%;
+}
+.informacionContacto h3{
+  width: 100%;
+  height: 15%;
+}
+/*Fin de main Contacto*/
+/*Fin de main*/
+/*Comienzo del Footer*/
+footer {
+  background-color: #112d4e;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul li {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+footer ul li a {
+  width: auto;
+  height: auto;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f7f7;
+  display: flex;
+}
+.accessLeft {
+  margin-left: 2vw;
+}
+.accessCenter {
+  justify-content: center;
+}
+.accessRight {
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+/*Fin del Footer*/
+
+/*Animacion botones3D*/
+a:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+input:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+/*Fin Animacion botones3D*/
+
+/*Responsive*/
+@media(max-width:650px){
+  /*Barra de navegación responsive*/
+  nav{
+    display: flex;
+    padding: 0%;
+    order: 2;
+  }
+  nav ul{
+    flex-wrap: wrap;
+    height: auto;
+    padding: 2%;
+  }
+  .logo{
+    margin-bottom: 2vh;
+  }
+  .logo a{
+    justify-content:flex-start;
+  }
+  .logo img{
+    border-radius: 6vh;
+  }
+  .barraDeBusqueda {
+    width: 100%;
+    order:3;
+  } 
+  .barraDeBusqueda input{
+    border-radius: 5vh;
+  }
+  .barraDeBusqueda div a{
+    display: none;
+  }
+  .barra {
+    width: 70%;
+    height: 9vh;
+    margin-bottom: 3vh;
+  }
+  .btnBusqueda {
+    margin-bottom: 3vh
+  }
+  .miCuenta{
+    display: none;
+  }
+  .menuDesplegable{
+    width: 15%;
+    display: flex;
+  }
+  .menuDesplegableLi{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2vh;
+    width: 65%;
+  }
+  .carrousel{
+    height: auto;
+    margin-top: 2vh;
+    border-top: none;
+  }
+  .carrousel img{
+    height: auto;
+    width: 80vw;
+  }
+  .carrousel button{
+    font-size: 0;
+  }
+  /*Fin Barra de navegación responsive*/
+  /*Menu desplegables comienzo*/
+  /*
+    .carrousel img{
+      height: auto;
+      width:80vw;
+      z-index:-1;
+    }
+    .menuItems{
+      display: flex;
+      width: 50%;
+      height: auto;
+      position: absolute;
+      background-color: #3f72af;
+      z-index: 1;
+      right: 0;
+      top:0;
+      border-radius: 2vh;
+    }
+    .menuItems ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .menuItems ul li{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .menuItems ul li a{
+      background-color: #f9f7f7;
+      border-radius: 2vh;
+      margin: 2vh;
+      padding: 3%;
+    }
+  */  
+  /*Menu desplegables fin*/
+  /*Main responsive*/
+  main {
+    flex-wrap: wrap;
+  }
+  main div {
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 8vh;
+  }
+  .indexMain{
+    margin-bottom: 0;
+  }
+  .ofertas{
+    height: auto;
+  }
+  .ofertas a{
+    width: 100%;
+    height: auto;
+  }
+  .ofertas a h1{
+    width: 100%;
+    height: 8vh;
+  }
+  .ofertas a img{
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  .cuenta{
+    height: auto;
+  }
+  .cuenta a{
+    width: 100%;
+    height: auto;
+  }
+  .cuenta a h1{
+    width: 100%;
+    height: 8vh;
+  }
+  .cuenta a img{
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  .envio{
+    height: auto;
+  }
+  .envio a{
+    width: 100%;
+    height: auto;
+  }
+  .envio a h1{
+    width: 100%;
+    height: 8vh;
+  }
+  .envio a img{
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  /*Contacto*/
+  .contactoMain{
+    width: 99vw;
+    height: auto;
+    margin-bottom: 6vh;
+  }
+  .contactoSection{
+    height: auto;
+  }
+  .contactoHorario{
+    height: 25vh;
+    padding: 4%;
+  }
+  .informacionContacto{
+    width: 80%;
+    height: 10vh;
+  }
+  .ubicacionContacto{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .ubicacionContacto iframe{
+    width: 80%;
+    height: 25vh;
+  }
+  .contactoInfo{
+    flex-wrap: wrap;
+    height: auto;
+    padding: 4%;
+  }
+  .informacionContacto{
+    margin-bottom: 5vh;
+  }
+  /*Contacto*/
+  /*Nuevo Usuario*/
+  .nuevoUsuarioMain{
+    flex-wrap: wrap;
+  }
+  .nuevoUsuarioSection {
+    width: 80%;
+    height: auto;
+    margin: 3%;
+  }
+  .nuevoUsuarioSection div {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 0;
+  }
+  .formularioIngreso {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.formularioIngreso input{
+  height: 8vh;
+  border-radius: 5vh;
+  padding: 2%;
+  margin-top: 2vh;
+}
+  /*Nuevo Usuario fin*/
+  /*Busqueda*/
+  .busquedaMain{
+    height: auto;
+    justify-content: flex-start;
+  }
+  main aside{
+    display: none;
+    width: 35%;
+    height: 75vh;
+  }
+  .busquedaMain section {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+  }
+  main section div {
+    width: 60%;
+    height: 25vh;
+  }
+  .articuloEliminado{
+    display: none;
+  }
+  /*Busqueda fin*/
+  /*Ingreso Usuarios*/
+  .usuarioSection form input {
+    border-radius: 5vh;
+    width: 80%;
+  }
+  .usuarioSection div{
+    border-radius: 7vh;
+    height:25vh;
+  }
+  /*Main responsive*/
+  /*footer responsive*/
+  footer ul li a {
+    width: auto;
+    padding: 4%;
+    border-radius: 3vh;
+  }
+  /* fin footer responsive*/
+}
