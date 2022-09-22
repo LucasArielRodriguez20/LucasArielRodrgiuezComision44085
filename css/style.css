@@ -94,14 +94,14 @@ nav ul li a {
 }
 /*Fin de barra de navegacion*/
 /*Comienzo de header*/
-header {
+.carrousel {
   height:70vh;
   display: flex;
   align-content: center;
   margin: auto;
   border-top: #000000 solid 3px;
 }
-header img {
+.carrousel img {
   width: 100%;
   height: 20em;
   margin: auto;
@@ -109,7 +109,7 @@ header img {
 }
 /*Fin de header*/
 /*Comienzo de main*/
-main {
+.indexMain {
   display: flex;
   width: 100%;
   height: auto;
@@ -125,7 +125,7 @@ main {
   justify-content: space-between;
   margin-bottom: 0px;
 }
-main aside {
+.busquedaMain aside {
   width: 50%;
   display: flex;
   height: 100%;
@@ -134,14 +134,14 @@ main aside {
   flex-wrap: wrap;
   background-color: #dbe2ef;
 }
-main aside div {
+.indexMain aside div {
   width: 100%;
   display: flex;
   height: 10em;
   align-items: center;
   justify-content: center;
 }
-main div {
+.indexMain div {
   width: 26%;
   height: 50vh;
   background-color: #dbe2ef;
@@ -214,7 +214,7 @@ main div {
   align-items: center;
   flex-wrap: wrap;
 }
-main section div {
+.busquedaMain section div {
   width: 26%;
   height:auto;
   background-color: #dbe2ef;
@@ -249,6 +249,14 @@ main section div {
   display: none;
 }
 /*Comienzo de main Nosotros*/
+.nosotrosMain{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
 .nosotrosSection {
   width: 50%;
   height: 100%;
@@ -295,9 +303,9 @@ main section div {
 .nuevoUsuarioMain {
   display: flex;
   width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4vh;
 }
 .nuevoUsuarioSection {
   width: 50%;
@@ -313,6 +321,11 @@ main section div {
 .nuevoUsuarioSection div {
   width: 50%;
   height: 50%;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
 }
 .usuarioSection div img {
   width: 25%;
@@ -339,6 +352,11 @@ main section div {
 /*Comienzo de main Inicio de usuario*/
 .usuarioMain {
   width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
 }
 .usuarioSection {
   width: 100%;
@@ -376,6 +394,10 @@ main section div {
 .contactoMain {
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
 }
 .contactoSection {
   width: 100%;
@@ -390,6 +412,7 @@ main section div {
   justify-content: center;
   align-items: center;
   margin: 2%;
+  background-color: #dbe2ef;
 }
 .contactoHorario{
   height:12vh;
