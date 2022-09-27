@@ -176,7 +176,7 @@ nav ul li a {
   text-align: center;
   flex-wrap: wrap;
 }
-.envio a h1{
+.envio a h2{
   width: 100%;
   height: 2vh;
   font-size: 3vh;
@@ -715,7 +715,7 @@ input:hover{
     width: 100%;
     height: auto;
   }
-  .ofertas a h1{
+  .ofertas a h2{
     width: 100%;
     height: 8vh;
   }
