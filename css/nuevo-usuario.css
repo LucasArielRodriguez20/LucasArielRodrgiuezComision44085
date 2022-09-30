@@ -1,0 +1,34 @@
+/*Comienzo de main Nuevo usuario*/
+.nuevoUsuarioMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nuevoUsuarioSection {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nuevoUsuarioSection div {
+  width: 50%;
+  height: 50%;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+.nuevoUsuarioSection form h3 {
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/*Fin de main Nuevo usuario*//*# sourceMappingURL=nuevo-usuario.css.map */

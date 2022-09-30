@@ -1,0 +1,140 @@
+/*Sugerencias Page*/
+/*comienzo de barra de navegacion sugerencias*/
+.sugerenciasNav {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: auto;
+  background-color: #3f72af;
+  border-top: 0;
+  border-bottom: #000000 1px;
+}
+
+.sugerenciasNavLogo {
+  grid-column: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.sugerenciasNavImg {
+  height: 10vh;
+  border-radius: 2vh;
+}
+
+.sugerenciasNavTitulo {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-left: 9vw;
+  font-size: 4vh;
+}
+
+.sugerenciasNavVolver {
+  display: flex;
+  background-color: #dbe2ef;
+  grid-column: 10;
+  border-radius: 2vh;
+  margin-right: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+.sugerenciasNavVolver h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+}
+
+/*fin de barra de navegacion sugerencias*/
+.sugerenciasMain {
+  height: auto;
+  width: 100%;
+}
+
+.sugerenciasMainFormulario {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 20vh 20vh 20vh 30vh 20vh;
+  border: solid #000000 2px;
+  border-radius: 2vh;
+  margin-top: 2vh;
+  padding: 2%;
+}
+
+.inputSugerencia {
+  height: 10vh;
+  width: 28vw;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inputSugerenciaTextBox {
+  height: 25vh;
+  width: 56.5vw;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.sugerenciasMainFormularioh3 {
+  width: 20vw;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 4vh;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+}
+
+.sugNombre {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+}
+
+.sugApellido {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row: 2;
+}
+
+.sugTel {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row: 3;
+}
+
+.sugEmail {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 3;
+}
+
+.inputSugerenciaBoton {
+  height: 10vh;
+  width: 28.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 5;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+.menuSugerencia {
+  display: none;
+}
+
+/*Sugerencias Page Fin*//*# sourceMappingURL=sugerencias.css.map */

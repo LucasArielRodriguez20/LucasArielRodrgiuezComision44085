@@ -1,0 +1,379 @@
+/*Responsive*/
+@media(max-width:650px) {
+
+    /*Barra de navegación responsive*/
+    nav {
+        display: flex;
+        padding: 0%;
+        order: 2;
+
+        ul {
+            flex-wrap: wrap;
+            height: auto;
+            padding: 2%;
+        }
+    }
+
+    .logo {
+        margin-bottom: 2vh;
+
+        a {
+            justify-content: flex-start;
+        }
+
+        img {
+            border-radius: 6vh;
+        }
+    }
+
+    .barraDeBusqueda {
+        width: 100%;
+        order: 3;
+
+        input {
+            border-radius: 5vh;
+        }
+
+        div a {
+            display: none;
+        }
+    }
+
+    .barra {
+        width: 70%;
+        height: 9vh;
+        margin-bottom: 3vh;
+    }
+
+    .btnBusqueda {
+        margin-bottom: 3vh
+    }
+
+    .miCuenta {
+        display: none;
+    }
+
+    .menuDesplegable {
+        width: 15%;
+        display: flex;
+    }
+
+    .menuDesplegableLi {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        width: 65%;
+    }
+
+    .carrousel {
+        height: auto;
+        margin-top: 2vh;
+        border-top: none;
+
+        img {
+            height: auto;
+            width: 80vw;
+        }
+
+        button {
+            font-size: 0;
+        }
+    }
+
+    /*Barra sugerencias*/
+    .sugerenciasNav {
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 10vh 10vh;
+    }
+
+    .sugerenciasNavLogo {
+        grid-column: 2;
+    }
+
+    .sugerenciasNavTitulo {
+        grid-row: 2;
+    }
+
+    .sugerenciasNavVolver {
+        display: none;
+    }
+
+    .sugerenciasNavImg {
+        border-radius: 5vh;
+        height: 7vh;
+    }
+
+    .menuSugerencia {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        grid-column: 9;
+        height: 7vh;
+    }
+
+    /*Barra sugerencias fin*/
+    /*Fin Barra de navegación responsive*/
+    /*Main responsive*/
+    main {
+        flex-wrap: wrap;
+
+        div {
+            width: 80%;
+            height: 20vh;
+            margin-bottom: 8vh;
+        }
+    }
+
+
+    .indexMain {
+        margin-bottom: 0;
+    }
+
+    .ofertas {
+        height: auto;
+
+        a {
+            width: 100%;
+            height: auto;
+
+            h2 {
+                width: 100%;
+                height: 8vh;
+            }
+
+            img {
+                width: auto;
+                height: 18vh;
+                margin-bottom: 0;
+                margin-top: 4vh;
+            }
+        }
+
+    }
+
+
+    .cuenta {
+        height: auto;
+
+        a {
+            width: 100%;
+            height: auto;
+
+            h1 {
+                width: 100%;
+                height: 8vh;
+            }
+
+            img {
+                width: auto;
+                height: 18vh;
+                margin-bottom: 0;
+                margin-top: 4vh;
+            }
+        }
+    }
+
+
+    .envio {
+        height: auto;
+
+        a {
+            width: 100%;
+            height: auto;
+
+            h1 {
+                width: 100%;
+                height: 8vh;
+            }
+
+            img {
+                width: auto;
+                height: 18vh;
+                margin-bottom: 0;
+                margin-top: 4vh;
+            }
+        }
+    }
+
+    /*Contacto*/
+    .contactoMain {
+        width: 99vw;
+        height: auto;
+        margin-bottom: 6vh;
+    }
+
+    .contactoSection {
+        height: auto;
+    }
+
+    .contactoHorario {
+        height: 25vh;
+        padding: 4%;
+    }
+
+    .informacionContacto {
+        width: 80%;
+        height: 10vh;
+    }
+
+    .ubicacionContacto {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 80%;
+            height: 25vh;
+        }
+    }
+
+
+    .contactoInfo {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 4%;
+    }
+
+    .informacionContacto {
+        margin-bottom: 5vh;
+    }
+
+    /*Contacto*/
+    /*Nuevo Usuario*/
+    .nuevoUsuarioMain {
+        flex-wrap: wrap;
+    }
+
+    .nuevoUsuarioSection {
+        width: 80%;
+        height: auto;
+        margin: 3%;
+
+        div {
+            width: 100%;
+            height: 50vh;
+            margin-bottom: 0;
+        }
+    }
+
+    .nuevoUsuarioSection .formularioIngreso {
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            height: 8vh;
+            border-radius: 5vh;
+            padding: 2%;
+            margin-top: 2vh;
+        }
+    }
+
+
+    /*Nuevo Usuario fin*/
+    /*Busqueda*/
+    .busquedaMain {
+        height: auto;
+        justify-content: flex-start;
+
+        section {
+            width: 100%;
+            height: auto;
+            margin-top: 2vh;
+        }
+    }
+
+    main aside {
+        display: none;
+        width: 35%;
+        height: 75vh;
+    }
+
+
+    main section div {
+        width: 60%;
+        height: 25vh;
+    }
+
+    .articuloEliminado {
+        display: none;
+    }
+
+    /*Busqueda fin*/
+    /*Ingreso Usuarios*/
+    .usuarioSection {
+        form input {
+            border-radius: 5vh;
+            width: 80%;
+        }
+
+        div {
+            border-radius: 7vh;
+            height: 25vh;
+        }
+    }
+
+    /*Ingreso Usuarios fin*/
+    /*Main sugerencias*/
+    .sugerenciasMainFormulario {
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 20vh 14vh 14vh 14vh 14vh 30vh 14vh;
+
+        input {
+            border-radius: 4vh;
+        }
+    }
+
+    .inputSugerencia {
+        height: 10vh;
+        width: 56vw;
+    }
+
+    .sugNombre {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2;
+    }
+
+    .sugApellido {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .sugTel {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .sugEmail {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .inputSugerenciaBoton {
+        grid-row: 7;
+        grid-column: 1;
+        width: 58vw;
+    }
+
+    .inputSugerenciaTextBox {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    /*Main sugerencias fin*/
+    /*Main responsive*/
+    /*footer responsive*/
+    footer ul li a {
+        width: auto;
+        padding: 4%;
+        border-radius: 3vh;
+    }
+
+    /* fin footer responsive*/
+}

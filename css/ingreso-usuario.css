@@ -1,0 +1,47 @@
+/*Comienzo de main Inicio de usuario*/
+.usuarioMain {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+
+.usuarioSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.usuarioSection div {
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 38vh;
+}
+.usuarioSection div img {
+  width: 25%;
+  height: 50%;
+}
+.usuarioSection form {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.usuarioSection form input {
+  width: 50%;
+  height: 15%;
+  text-align: center;
+  border: solid 1px;
+}
+
+/*Fin de main Inicio de usuario*//*# sourceMappingURL=ingreso-usuario.css.map */
