@@ -1,6 +1,9 @@
 /*Responsive*/
 @media(max-width:650px) {
-
+    $colorAzul: #3f72af;
+    $colorBlanco: #f9f7f7;
+    $colorNegro:#000000;
+    $colorAzulOscuro:#112d4e;
     /*Barra de navegación responsive*/
     nav {
         display: flex;
@@ -81,6 +84,52 @@
         }
     }
 
+    /*Barra desplegable*/
+    .menuIndex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        background-color: $colorAzul;
+
+        li {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 2vh;
+            a {
+                background-color: $colorBlanco;
+                height:auto;
+                width:auto;
+                border-radius:2vh ;
+                padding: 2vh;
+                img{
+                    height: 6vh;
+                    width: 13vw;
+                }
+            }
+        }
+    }
+    /*Fin barra*/
+    //BoostrapResponsive
+    .logoFarol {
+        width: 12vw;
+    }
+
+    .opcionesDeBusqueda {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .busquedaTextbox {
+        display: none;
+    }
+
+
     /*Barra sugerencias*/
     .sugerenciasNav {
         grid-template-columns: repeat(10, 10%);
@@ -115,19 +164,15 @@
     /*Barra sugerencias fin*/
     /*Fin Barra de navegación responsive*/
     /*Main responsive*/
-    main {
+    .indexMain {
+        margin-bottom: 0;
         flex-wrap: wrap;
 
         div {
             width: 80%;
-            height: 20vh;
+            height: auto;
             margin-bottom: 8vh;
         }
-    }
-
-
-    .indexMain {
-        margin-bottom: 0;
     }
 
     .ofertas {
@@ -182,7 +227,7 @@
             width: 100%;
             height: auto;
 
-            h1 {
+            h2 {
                 width: 100%;
                 height: 8vh;
             }

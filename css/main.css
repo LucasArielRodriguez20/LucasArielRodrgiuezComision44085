@@ -1,0 +1,1037 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Comienzo de barra de navegacion*/
+nav {
+  display: flex;
+  padding: 1%;
+  background-color: #3f72af;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  height: 5em;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  background-color: #f9f7f7;
+  text-align: center;
+}
+
+.menuDesplegable {
+  display: none;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo a {
+  background-color: #3f72af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 40%;
+  margin-left: 2em;
+  border-radius: 2vh;
+}
+
+.barraDeBusqueda {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.barra {
+  width: 80%;
+  height: 3em;
+  padding: 1%;
+}
+
+.btnBusqueda {
+  width: 20%;
+  height: 3em;
+}
+
+.barraDeBusqueda div {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.barraDeBusqueda div a {
+  width: 48%;
+  height: 2em;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miCuenta {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.miCuenta a {
+  width: 40%;
+  height: 5em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4vh;
+  background-color: #f9f7f7;
+}
+.miCuenta a img {
+  width: 100%;
+  height: 80%;
+}
+
+.bg-blue {
+  background-color: #3f72af;
+}
+
+.logoFarol {
+  width: 8vw;
+  height: 12vh;
+  border-radius: 3vh;
+}
+
+.busquedaTextbox {
+  width: 34.5vw;
+}
+
+.opcionesDeBusqueda {
+  margin-top: 2vh;
+  display: flex;
+}
+.opcionesDeBusqueda a {
+  background-color: #f9f7f7;
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vh;
+}
+
+/*Comienzo del Footer*/
+footer {
+  background-color: #112d4e;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+footer ul li {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+footer ul li a {
+  width: auto;
+  height: auto;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f7f7;
+  display: flex;
+}
+
+.accessLeft {
+  margin-left: 2vw;
+}
+
+.accessCenter {
+  justify-content: center;
+}
+
+.accessRight {
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+/*Fin del Footer*/
+/*Animacion botones3D*/
+.animacion-crecer:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.animacion-cambio-color:hover {
+  color: #3f72af;
+}
+
+/*Fin Animacion botones3D*/
+.flexStart {
+  justify-content: flex-start;
+}
+
+.formularioIngreso {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formularioIngreso input {
+  width: 100%;
+  height: 4%;
+}
+
+/*Barra desplegable*/
+.menuIndex {
+  display: none;
+}
+
+/*Fin barra
+/*Comienzo de header*/
+.carrousel {
+  height: auto;
+  display: flex;
+  align-content: center;
+  margin: auto;
+  border-top: #000000 solid 3px;
+  padding: 5vh;
+  margin-bottom: 2vh;
+}
+.carrousel img {
+  height: 25em;
+  margin: auto;
+  z-index: 1;
+}
+
+/*Fin de header*/
+/*Comienzo de main*/
+.indexMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+.indexMain aside div {
+  width: 100%;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  justify-content: center;
+}
+.indexMain div {
+  width: 26%;
+  height: 50vh;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ofertas a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.ofertas a h1 {
+  width: 100%;
+  height: 2vh;
+}
+.ofertas a img {
+  width: 80vw;
+  height: 25vh;
+  margin-bottom: 6vh;
+}
+
+.envio a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.envio a h2 {
+  width: 100%;
+  height: 2vh;
+  font-size: 3vh;
+}
+.envio a img {
+  width: 80vw;
+  height: 20vh;
+  margin-bottom: 6vh;
+}
+
+.cuenta a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.cuenta a h1 {
+  width: 100%;
+  height: 2vh;
+  font-size: 3vh;
+}
+.cuenta a img {
+  width: 80vw;
+  height: 20vh;
+  margin-bottom: 6vh;
+}
+
+/*Fin de main*/
+/*Comienzo de main*/
+.busquedaMain {
+  display: flex;
+  width: 100%;
+  height: 80em;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.busquedaMain aside {
+  width: 50%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dbe2ef;
+}
+
+.busquedaMain section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.busquedaMain section div {
+  width: 26%;
+  height: auto;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+.busquedaMain section div figure {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.busquedaMain section div figure img {
+  width: 50%;
+  height: 13vh;
+}
+.busquedaMain section div figure p {
+  width: 100%;
+  height: 3vh;
+  text-align: center;
+}
+.busquedaMain section div figure figcaption {
+  width: 100%;
+  height: 1vh;
+  text-align: center;
+}
+
+.menuItems {
+  display: none;
+}
+
+/*Fin de main*/
+/*Comienzo de main Contacto*/
+.contactoMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+
+.contactoSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactoSection div {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  background-color: #dbe2ef;
+}
+
+.contactoHorario {
+  height: 12vh;
+}
+
+.informacionContacto {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.informacionContacto p {
+  width: 100%;
+  height: 15%;
+}
+.informacionContacto h3 {
+  width: 100%;
+  height: 15%;
+}
+
+/*Fin de main Contacto*/
+/*Comienzo de main Inicio de usuario*/
+.usuarioMain {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+
+.usuarioSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.usuarioSection div {
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 38vh;
+}
+.usuarioSection div img {
+  width: 25%;
+  height: 50%;
+}
+.usuarioSection form {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.usuarioSection form input {
+  width: 50%;
+  height: 15%;
+  text-align: center;
+  border: solid 1px;
+}
+
+/*Fin de main Inicio de usuario*/
+/*Comienzo de main Nosotros*/
+.nosotrosMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12vh;
+}
+
+.nosotrosSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  padding: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nosotrosSection h2 {
+  width: 80%;
+  height: 5%;
+  text-align: center;
+  margin-bottom: 11%;
+  font-size: 5vh;
+}
+.nosotrosSection p {
+  width: 80%;
+  height: auto;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  text-align: justify;
+}
+.nosotrosSection img {
+  width: 100%;
+  height: 80%;
+}
+.nosotrosSection a {
+  background-color: #dbe2ef;
+  width: 50%;
+  height: 10vh;
+  border: solid #000000 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotrosSection h1 {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+/*Fin de main Nosotros*/
+/*Comienzo de main Nuevo usuario*/
+.nuevoUsuarioMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nuevoUsuarioSection {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nuevoUsuarioSection div {
+  width: 50%;
+  height: 50%;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+.nuevoUsuarioSection form h3 {
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/*Fin de main Nuevo usuario*/
+/*Sugerencias Page*/
+/*comienzo de barra de navegacion sugerencias*/
+.sugerenciasNav {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: auto;
+  background-color: #3f72af;
+  border-top: 0;
+  border-bottom: #000000 1px;
+}
+
+.sugerenciasNavLogo {
+  grid-column: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.sugerenciasNavImg {
+  height: 10vh;
+  border-radius: 2vh;
+}
+
+.sugerenciasNavTitulo {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-left: 9vw;
+  font-size: 4vh;
+}
+
+.sugerenciasNavVolver {
+  display: flex;
+  background-color: #dbe2ef;
+  grid-column: 10;
+  border-radius: 2vh;
+  margin-right: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+.sugerenciasNavVolver h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+}
+
+/*fin de barra de navegacion sugerencias*/
+.sugerenciasMain {
+  height: auto;
+  width: 100%;
+}
+
+.sugerenciasMainFormulario {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 20vh 20vh 20vh 30vh 20vh;
+  border: solid #000000 2px;
+  border-radius: 2vh;
+  margin-top: 2vh;
+  padding: 2%;
+}
+
+.inputSugerencia {
+  height: 10vh;
+  width: 28vw;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inputSugerenciaTextBox {
+  height: 25vh;
+  width: 56.5vw;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.sugerenciasMainFormularioh3 {
+  width: 20vw;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 4vh;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+}
+
+.sugNombre {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+}
+
+.sugApellido {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row: 2;
+}
+
+.sugTel {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row: 3;
+}
+
+.sugEmail {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 3;
+}
+
+.inputSugerenciaBoton {
+  height: 10vh;
+  width: 28.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 5;
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+.menuSugerencia {
+  display: none;
+}
+
+/*Sugerencias Page Fin*/
+/*Responsive*/
+@media (max-width: 650px) {
+  /*Barra de navegación responsive*/
+  nav {
+    display: flex;
+    padding: 0%;
+    order: 2;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 2%;
+  }
+  .logo {
+    margin-bottom: 2vh;
+  }
+  .logo a {
+    justify-content: flex-start;
+  }
+  .logo img {
+    border-radius: 6vh;
+  }
+  .barraDeBusqueda {
+    width: 100%;
+    order: 3;
+  }
+  .barraDeBusqueda input {
+    border-radius: 5vh;
+  }
+  .barraDeBusqueda div a {
+    display: none;
+  }
+  .barra {
+    width: 70%;
+    height: 9vh;
+    margin-bottom: 3vh;
+  }
+  .btnBusqueda {
+    margin-bottom: 3vh;
+  }
+  .miCuenta {
+    display: none;
+  }
+  .menuDesplegable {
+    width: 15%;
+    display: flex;
+  }
+  .menuDesplegableLi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2vh;
+    width: 65%;
+  }
+  .carrousel {
+    height: auto;
+    margin-top: 2vh;
+    border-top: none;
+  }
+  .carrousel img {
+    height: auto;
+    width: 80vw;
+  }
+  .carrousel button {
+    font-size: 0;
+  }
+  /*Barra desplegable*/
+  .menuIndex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #3f72af;
+  }
+  .menuIndex li {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vh;
+  }
+  .menuIndex li a {
+    background-color: #f9f7f7;
+    height: auto;
+    width: auto;
+    border-radius: 2vh;
+    padding: 2vh;
+  }
+  .menuIndex li a img {
+    height: 6vh;
+    width: 13vw;
+  }
+  /*Fin barra*/
+  .logoFarol {
+    width: 12vw;
+  }
+  .opcionesDeBusqueda {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .busquedaTextbox {
+    display: none;
+  }
+  /*Barra sugerencias*/
+  .sugerenciasNav {
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 10vh 10vh;
+  }
+  .sugerenciasNavLogo {
+    grid-column: 2;
+  }
+  .sugerenciasNavTitulo {
+    grid-row: 2;
+  }
+  .sugerenciasNavVolver {
+    display: none;
+  }
+  .sugerenciasNavImg {
+    border-radius: 5vh;
+    height: 7vh;
+  }
+  .menuSugerencia {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    grid-column: 9;
+    height: 7vh;
+  }
+  /*Barra sugerencias fin*/
+  /*Fin Barra de navegación responsive*/
+  /*Main responsive*/
+  .indexMain {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+  }
+  .indexMain div {
+    width: 80%;
+    height: auto;
+    margin-bottom: 8vh;
+  }
+  .ofertas {
+    height: auto;
+  }
+  .ofertas a {
+    width: 100%;
+    height: auto;
+  }
+  .ofertas a h2 {
+    width: 100%;
+    height: 8vh;
+  }
+  .ofertas a img {
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  .cuenta {
+    height: auto;
+  }
+  .cuenta a {
+    width: 100%;
+    height: auto;
+  }
+  .cuenta a h1 {
+    width: 100%;
+    height: 8vh;
+  }
+  .cuenta a img {
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  .envio {
+    height: auto;
+  }
+  .envio a {
+    width: 100%;
+    height: auto;
+  }
+  .envio a h2 {
+    width: 100%;
+    height: 8vh;
+  }
+  .envio a img {
+    width: auto;
+    height: 18vh;
+    margin-bottom: 0;
+    margin-top: 4vh;
+  }
+  /*Contacto*/
+  .contactoMain {
+    width: 99vw;
+    height: auto;
+    margin-bottom: 6vh;
+  }
+  .contactoSection {
+    height: auto;
+  }
+  .contactoHorario {
+    height: 25vh;
+    padding: 4%;
+  }
+  .informacionContacto {
+    width: 80%;
+    height: 10vh;
+  }
+  .ubicacionContacto {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .ubicacionContacto iframe {
+    width: 80%;
+    height: 25vh;
+  }
+  .contactoInfo {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 4%;
+  }
+  .informacionContacto {
+    margin-bottom: 5vh;
+  }
+  /*Contacto*/
+  /*Nuevo Usuario*/
+  .nuevoUsuarioMain {
+    flex-wrap: wrap;
+  }
+  .nuevoUsuarioSection {
+    width: 80%;
+    height: auto;
+    margin: 3%;
+  }
+  .nuevoUsuarioSection div {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 0;
+  }
+  .nuevoUsuarioSection .formularioIngreso {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nuevoUsuarioSection .formularioIngreso input {
+    height: 8vh;
+    border-radius: 5vh;
+    padding: 2%;
+    margin-top: 2vh;
+  }
+  /*Nuevo Usuario fin*/
+  /*Busqueda*/
+  .busquedaMain {
+    height: auto;
+    justify-content: flex-start;
+  }
+  .busquedaMain section {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+  }
+  main aside {
+    display: none;
+    width: 35%;
+    height: 75vh;
+  }
+  main section div {
+    width: 60%;
+    height: 25vh;
+  }
+  .articuloEliminado {
+    display: none;
+  }
+  /*Busqueda fin*/
+  /*Ingreso Usuarios*/
+  .usuarioSection form input {
+    border-radius: 5vh;
+    width: 80%;
+  }
+  .usuarioSection div {
+    border-radius: 7vh;
+    height: 25vh;
+  }
+  /*Ingreso Usuarios fin*/
+  /*Main sugerencias*/
+  .sugerenciasMainFormulario {
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 20vh 14vh 14vh 14vh 14vh 30vh 14vh;
+  }
+  .sugerenciasMainFormulario input {
+    border-radius: 4vh;
+  }
+  .inputSugerencia {
+    height: 10vh;
+    width: 56vw;
+  }
+  .sugNombre {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+  }
+  .sugApellido {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .sugTel {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .sugEmail {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .inputSugerenciaBoton {
+    grid-row: 7;
+    grid-column: 1;
+    width: 58vw;
+  }
+  .inputSugerenciaTextBox {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  /*Main sugerencias fin*/
+  /*Main responsive*/
+  /*footer responsive*/
+  footer ul li a {
+    width: auto;
+    padding: 4%;
+    border-radius: 3vh;
+  }
+  /* fin footer responsive*/
+}
+
+/*# sourceMappingURL=main.css.map */
