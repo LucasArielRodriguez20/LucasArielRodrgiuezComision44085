@@ -1,3 +1,6 @@
+/*Comienzo de barra Nosotros*/
+
+/*Fin de barra Nosotros*/
 /*Comienzo de main Nosotros*/
 .nosotrosMain {
     display: flex;
@@ -40,13 +43,11 @@
     }
 
     a {
-        background-color: #dbe2ef;
+        @include flex-style;
+        background-color: $colorBlanco2;
         width: 50%;
         height: 10vh;
-        border: solid #000000 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border: solid $colorNegro 1px;
     }
 
     h1 {

@@ -1,9 +1,7 @@
+@import "var.scss";
 /*Responsive*/
-@media(max-width:650px) {
-    $colorAzul: #3f72af;
-    $colorBlanco: #f9f7f7;
-    $colorNegro:#000000;
-    $colorAzulOscuro:#112d4e;
+@media(max-width:768px) {
+
     /*Barra de navegación responsive*/
     nav {
         display: flex;
@@ -56,19 +54,6 @@
         display: none;
     }
 
-    .menuDesplegable {
-        width: 15%;
-        display: flex;
-    }
-
-    .menuDesplegableLi {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-bottom: 2vh;
-        width: 65%;
-    }
-
     .carrousel {
         height: auto;
         margin-top: 2vh;
@@ -98,19 +83,22 @@
             display: flex;
             justify-content: flex-end;
             margin: 2vh;
+
             a {
                 background-color: $colorBlanco;
-                height:auto;
-                width:auto;
-                border-radius:2vh ;
+                height: auto;
+                width: auto;
+                border-radius: 2vh;
                 padding: 2vh;
-                img{
+
+                img {
                     height: 6vh;
                     width: 13vw;
                 }
             }
         }
     }
+
     /*Fin barra*/
     //BoostrapResponsive
     .logoFarol {
@@ -282,7 +270,19 @@
     }
 
     .informacionContacto {
-        margin-bottom: 5vh;
+        h3 {
+            margin-bottom: 3vw;
+        }
+    }
+
+    .miCuentaContacto {
+        a {
+            margin-right: 0;
+            height: 10vh;
+            width: 22vw;
+            margin-bottom: 3vh;
+            font-size: 2vw;
+        }
     }
 
     /*Contacto*/
@@ -304,12 +304,10 @@
     }
 
     .nuevoUsuarioSection .formularioIngreso {
+        @include flex-style;
         width: 100%;
         height: auto;
         margin-top: 2vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         input {
             height: 8vh;
@@ -318,39 +316,92 @@
             margin-top: 2vh;
         }
     }
-
+    .nuevoUsuarioImg{
+        width: 80%;
+        div{
+            width: 100%;
+            margin-right: 0;
+        }
+    }
 
     /*Nuevo Usuario fin*/
     /*Busqueda*/
+    /*Barra Busqueda*/
+    .busquedaDN {
+        display: flex;
+    }
+
+    .carritoBusqueda {
+        a {
+            margin-right: 0;
+            height: 10vh;
+            width: 22vw;
+            margin-bottom: 3vh;
+            font-size: 2vw;
+        }
+    }
+
+    .miCuentaBusqueda {
+        a {
+            margin-right: 0;
+            height: 10vh;
+            width: 22vw;
+            margin-bottom: 3vh;
+            font-size: 2vw;
+        }
+
+    }
+
+    /*Busqueda Main*/
     .busquedaMain {
         height: auto;
         justify-content: flex-start;
+
+        aside {
+            display: none;
+            width: 35%;
+            height: 75vh;
+        }
 
         section {
             width: 100%;
             height: auto;
             margin-top: 2vh;
+
+            div {
+                width: 60%;
+                height: auto;
+                align-items: baseline;
+
+                figure {
+                    height: auto;
+
+                    img {
+                        margin-top: 1vh;
+                        height: 30vh;
+                    }
+
+                    figcaption {
+                        height: 6vh;
+                    }
+                }
+
+            }
+
+            .articuloEliminado {
+                display: none;
+            }
         }
     }
 
-    main aside {
-        display: none;
-        width: 35%;
-        height: 75vh;
-    }
-
-
-    main section div {
-        width: 60%;
-        height: 25vh;
-    }
-
-    .articuloEliminado {
-        display: none;
-    }
 
     /*Busqueda fin*/
     /*Ingreso Usuarios*/
+    /*Comienzo Ingreso Usuario barra*/
+    .mr-5{
+        margin-right: 0;
+    }
+    /*Fin Ingreso Usuario barra*/
     .usuarioSection {
         form input {
             border-radius: 5vh;
@@ -360,59 +411,82 @@
         div {
             border-radius: 7vh;
             height: 25vh;
+            img{
+                height: 20vh;
+                width: 30vw;
+            }
         }
+
     }
 
     /*Ingreso Usuarios fin*/
     /*Main sugerencias*/
-    .sugerenciasMainFormulario {
-        grid-template-columns: 30vw 30vw;
-        grid-template-rows: 20vh 14vh 14vh 14vh 14vh 30vh 14vh;
+    .sugerenciasMain {
+        width: auto;
+        margin: auto;
 
-        input {
-            border-radius: 4vh;
+        .sugerenciasMainFormulario {
+            grid-template-columns: auto;
+            grid-template-rows: 20vh 14vh 14vh 14vh 14vh 30vh 14vh;
+
+            .inputSugerencia {
+                height: 10vh;
+                width: 56vw;
+                border-radius: 4vh;
+                margin: auto;
+            }
+
+            .sugNombre {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row: 2;
+            }
+
+            .sugApellido {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .sugTel {
+                grid-column: 1;
+                grid-row: 4;
+            }
+
+            .sugEmail {
+                grid-column: 1;
+                grid-row: 5;
+            }
+
+            .inputSugerenciaBoton {
+                grid-row: 7;
+                grid-column: 1;
+                width: 58vw;
+                border-radius: 4vh;
+                margin: auto;
+            }
+
+            .inputSugerenciaTextBox {
+                grid-column: 1;
+                grid-row: 6;
+                border-radius: 4vh;
+                margin: auto;
+            }
+
         }
-    }
-
-    .inputSugerencia {
-        height: 10vh;
-        width: 56vw;
-    }
-
-    .sugNombre {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row: 2;
-    }
-
-    .sugApellido {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .sugTel {
-        grid-column: 1;
-        grid-row: 4;
-    }
-
-    .sugEmail {
-        grid-column: 1;
-        grid-row: 5;
-    }
-
-    .inputSugerenciaBoton {
-        grid-row: 7;
-        grid-column: 1;
-        width: 58vw;
-    }
-
-    .inputSugerenciaTextBox {
-        grid-column: 1;
-        grid-row: 6;
     }
 
     /*Main sugerencias fin*/
     /*Main responsive*/
+    /*Comienzo main Nosotros*/
+    .nosotrosSection {
+        width: 100%;
+
+        a {
+            border-radius: 6vh;
+        }
+    }
+
+    /*Fin main Nosotros*/
     /*footer responsive*/
     footer ul li a {
         width: auto;

@@ -1,3 +1,19 @@
+/*Comienzo de Barra Contacto*/
+.miCuentaContacto{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+        width: 10vw;
+        height: 12vh;
+        margin-right: 1em;
+        @include flex-style;
+        border-radius: 4vh;
+        background-color: $colorBlanco;
+      }
+}
+/*Fin de Barra Contacto*/
 /*Comienzo de main Contacto*/
 .contactoMain {
     width: 100%;
@@ -10,18 +26,14 @@
 
 .contactoSection {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-style;
     flex-wrap: wrap;
 
     div {
         width: 85%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-style;
         margin: 2%;
-        background-color: #dbe2ef;
+        background-color: $colorBlanco2;
     }
 }
 

@@ -56,8 +56,8 @@ nav ul li a {
   width: 50%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .barra {
@@ -187,22 +187,6 @@ footer ul li a {
 }
 
 /*Fin Animacion botones3D*/
-.flexStart {
-  justify-content: flex-start;
-}
-
-.formularioIngreso {
-  width: 50%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.formularioIngreso input {
-  width: 100%;
-  height: 4%;
-}
-
 /*Barra desplegable*/
 .menuIndex {
   display: none;
@@ -236,27 +220,27 @@ footer ul li a {
   margin-bottom: 12vh;
 }
 .indexMain aside div {
-  width: 100%;
   display: flex;
-  height: 10em;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10em;
 }
 .indexMain div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 26%;
   height: 50vh;
   background-color: #dbe2ef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .ofertas a {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -271,11 +255,11 @@ footer ul li a {
 }
 
 .envio a {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -291,11 +275,11 @@ footer ul li a {
 }
 
 .cuenta a {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -311,6 +295,58 @@ footer ul li a {
 }
 
 /*Fin de main*/
+/*Barra de navegacion Busqueda*/
+.carritoBusqueda {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.carritoBusqueda a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 12vh;
+  margin-right: 2em;
+  border-radius: 4vh;
+  background-color: #f9f7f7;
+}
+.carritoBusqueda a img {
+  width: 100%;
+  height: 80%;
+}
+
+.miCuentaBusqueda {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.miCuentaBusqueda a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 12vh;
+  margin-right: 1em;
+  border-radius: 4vh;
+  background-color: #f9f7f7;
+}
+.miCuentaBusqueda a img {
+  width: 100%;
+  height: 80%;
+}
+
+.busquedaDN {
+  display: none;
+}
+
+.accessRight {
+  margin-right: 5vw;
+}
+
+/*Fin Barra de navegacion Busqueda*/
 /*Comienzo de main*/
 .busquedaMain {
   display: flex;
@@ -321,11 +357,11 @@ footer ul li a {
   margin-bottom: 0px;
 }
 .busquedaMain aside {
-  width: 50%;
   display: flex;
-  height: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
   flex-wrap: wrap;
   background-color: #dbe2ef;
 }
@@ -339,20 +375,20 @@ footer ul li a {
   flex-wrap: wrap;
 }
 .busquedaMain section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 26%;
   height: auto;
   background-color: #dbe2ef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 6vh;
 }
 .busquedaMain section div figure {
-  width: 100%;
-  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 25vh;
   flex-wrap: wrap;
 }
 .busquedaMain section div figure img {
@@ -375,6 +411,25 @@ footer ul li a {
 }
 
 /*Fin de main*/
+/*Comienzo de Barra Contacto*/
+.miCuentaContacto {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.miCuentaContacto a {
+  width: 10vw;
+  height: 12vh;
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4vh;
+  background-color: #f9f7f7;
+}
+
+/*Fin de Barra Contacto*/
 /*Comienzo de main Contacto*/
 .contactoMain {
   width: 100%;
@@ -420,6 +475,16 @@ footer ul li a {
 }
 
 /*Fin de main Contacto*/
+/*Comienzo de barra Inicio de usuario*/
+.mr-30 {
+  margin-right: 15vw;
+}
+
+.mr-5 {
+  margin-right: 5vw;
+}
+
+/*Fin de barra Inicio de usuario*/
 /*Comienzo de main Inicio de usuario*/
 .usuarioMain {
   width: 100%;
@@ -431,16 +496,16 @@ footer ul li a {
 }
 
 .usuarioSection {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
   flex-wrap: wrap;
 }
 .usuarioSection div {
   width: 50%;
-  height: 50vh;
+  height: auto;
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -451,22 +516,24 @@ footer ul li a {
   height: 50%;
 }
 .usuarioSection form {
-  width: 100%;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 50vh;
   text-align: center;
   flex-wrap: wrap;
 }
 .usuarioSection form input {
-  width: 50%;
+  width: 60%;
   height: 15%;
   text-align: center;
   border: solid 1px;
 }
 
 /*Fin de main Inicio de usuario*/
+/*Comienzo de barra Nosotros*/
+/*Fin de barra Nosotros*/
 /*Comienzo de main Nosotros*/
 .nosotrosMain {
   display: flex;
@@ -506,13 +573,13 @@ footer ul li a {
   height: 80%;
 }
 .nosotrosSection a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #dbe2ef;
   width: 50%;
   height: 10vh;
   border: solid #000000 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .nosotrosSection h1 {
   margin-bottom: 2vh;
@@ -523,34 +590,73 @@ footer ul li a {
 /*Comienzo de main Nuevo usuario*/
 .nuevoUsuarioMain {
   display: flex;
-  width: 100%;
-  height: auto;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.nuevoUsuarioImg {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nuevoUsuarioImg div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50vh;
+  background-color: #dbe2ef;
+  margin-bottom: 6vh;
+  margin-top: 6vh;
+  margin-right: 6vh;
 }
 
 .nuevoUsuarioSection {
   width: 50%;
-  height: 70vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.nuevoUsuarioSection div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-.nuevoUsuarioSection div {
   width: 50%;
   height: 50%;
   background-color: #dbe2ef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 6vh;
 }
-.nuevoUsuarioSection form h3 {
+.nuevoUsuarioSection form h2 {
   text-align: center;
   font-size: 2em;
   width: 100%;
   margin-bottom: 5%;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+
+.formularioIngreso {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formularioIngreso input {
+  width: 100%;
+  height: 6vh;
+  margin: 2vh;
+  padding: 1vw;
+}
+
+.mt-10 {
+  margin-top: 10vh;
 }
 
 /*Fin de main Nuevo usuario*/
@@ -695,7 +801,7 @@ footer ul li a {
 
 /*Sugerencias Page Fin*/
 /*Responsive*/
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   /*Barra de navegación responsive*/
   nav {
     display: flex;
@@ -736,17 +842,6 @@ footer ul li a {
   }
   .miCuenta {
     display: none;
-  }
-  .menuDesplegable {
-    width: 15%;
-    display: flex;
-  }
-  .menuDesplegableLi {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 2vh;
-    width: 65%;
   }
   .carrousel {
     height: auto;
@@ -919,8 +1014,15 @@ footer ul li a {
     height: auto;
     padding: 4%;
   }
-  .informacionContacto {
-    margin-bottom: 5vh;
+  .informacionContacto h3 {
+    margin-bottom: 3vw;
+  }
+  .miCuentaContacto a {
+    margin-right: 0;
+    height: 10vh;
+    width: 22vw;
+    margin-bottom: 3vh;
+    font-size: 2vw;
   }
   /*Contacto*/
   /*Nuevo Usuario*/
@@ -938,12 +1040,12 @@ footer ul li a {
     margin-bottom: 0;
   }
   .nuevoUsuarioSection .formularioIngreso {
-    width: 100%;
-    height: auto;
-    margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
   }
   .nuevoUsuarioSection .formularioIngreso input {
     height: 8vh;
@@ -951,31 +1053,73 @@ footer ul li a {
     padding: 2%;
     margin-top: 2vh;
   }
+  .nuevoUsuarioImg {
+    width: 80%;
+  }
+  .nuevoUsuarioImg div {
+    width: 100%;
+    margin-right: 0;
+  }
   /*Nuevo Usuario fin*/
   /*Busqueda*/
+  /*Barra Busqueda*/
+  .busquedaDN {
+    display: flex;
+  }
+  .carritoBusqueda a {
+    margin-right: 0;
+    height: 10vh;
+    width: 22vw;
+    margin-bottom: 3vh;
+    font-size: 2vw;
+  }
+  .miCuentaBusqueda a {
+    margin-right: 0;
+    height: 10vh;
+    width: 22vw;
+    margin-bottom: 3vh;
+    font-size: 2vw;
+  }
+  /*Busqueda Main*/
   .busquedaMain {
     height: auto;
     justify-content: flex-start;
+  }
+  .busquedaMain aside {
+    display: none;
+    width: 35%;
+    height: 75vh;
   }
   .busquedaMain section {
     width: 100%;
     height: auto;
     margin-top: 2vh;
   }
-  main aside {
-    display: none;
-    width: 35%;
-    height: 75vh;
-  }
-  main section div {
+  .busquedaMain section div {
     width: 60%;
-    height: 25vh;
+    height: auto;
+    align-items: baseline;
   }
-  .articuloEliminado {
+  .busquedaMain section div figure {
+    height: auto;
+  }
+  .busquedaMain section div figure img {
+    margin-top: 1vh;
+    height: 30vh;
+  }
+  .busquedaMain section div figure figcaption {
+    height: 6vh;
+  }
+  .busquedaMain section .articuloEliminado {
     display: none;
   }
   /*Busqueda fin*/
   /*Ingreso Usuarios*/
+  /*Comienzo Ingreso Usuario barra*/
+  .mr-5 {
+    margin-right: 0;
+  }
+  /*Fin Ingreso Usuario barra*/
   .usuarioSection form input {
     border-radius: 5vh;
     width: 80%;
@@ -984,47 +1128,66 @@ footer ul li a {
     border-radius: 7vh;
     height: 25vh;
   }
+  .usuarioSection div img {
+    height: 20vh;
+    width: 30vw;
+  }
   /*Ingreso Usuarios fin*/
   /*Main sugerencias*/
-  .sugerenciasMainFormulario {
-    grid-template-columns: 30vw 30vw;
+  .sugerenciasMain {
+    width: auto;
+    margin: auto;
+  }
+  .sugerenciasMain .sugerenciasMainFormulario {
+    grid-template-columns: auto;
     grid-template-rows: 20vh 14vh 14vh 14vh 14vh 30vh 14vh;
   }
-  .sugerenciasMainFormulario input {
-    border-radius: 4vh;
-  }
-  .inputSugerencia {
+  .sugerenciasMain .sugerenciasMainFormulario .inputSugerencia {
     height: 10vh;
     width: 56vw;
+    border-radius: 4vh;
+    margin: auto;
   }
-  .sugNombre {
+  .sugerenciasMain .sugerenciasMainFormulario .sugNombre {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 2;
   }
-  .sugApellido {
+  .sugerenciasMain .sugerenciasMainFormulario .sugApellido {
     grid-column: 1;
     grid-row: 3;
   }
-  .sugTel {
+  .sugerenciasMain .sugerenciasMainFormulario .sugTel {
     grid-column: 1;
     grid-row: 4;
   }
-  .sugEmail {
+  .sugerenciasMain .sugerenciasMainFormulario .sugEmail {
     grid-column: 1;
     grid-row: 5;
   }
-  .inputSugerenciaBoton {
+  .sugerenciasMain .sugerenciasMainFormulario .inputSugerenciaBoton {
     grid-row: 7;
     grid-column: 1;
     width: 58vw;
+    border-radius: 4vh;
+    margin: auto;
   }
-  .inputSugerenciaTextBox {
+  .sugerenciasMain .sugerenciasMainFormulario .inputSugerenciaTextBox {
     grid-column: 1;
     grid-row: 6;
+    border-radius: 4vh;
+    margin: auto;
   }
   /*Main sugerencias fin*/
   /*Main responsive*/
+  /*Comienzo main Nosotros*/
+  .nosotrosSection {
+    width: 100%;
+  }
+  .nosotrosSection a {
+    border-radius: 6vh;
+  }
+  /*Fin main Nosotros*/
   /*footer responsive*/
   footer ul li a {
     width: auto;
