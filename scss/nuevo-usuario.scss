@@ -6,11 +6,7 @@
 }
 
 .nuevoUsuarioImg {
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+    @include box-size(50%, auto, flex-end, center);
 
     div {
         @include flex-style;
@@ -58,12 +54,13 @@
 
     input {
         width: 100%;
-        height:6vh;
+        height: 6vh;
         margin: 2vh;
         padding: 1vw;
     }
 }
-.mt-10{
+
+.mt-10 {
     margin-top: 10vh;
 }
 

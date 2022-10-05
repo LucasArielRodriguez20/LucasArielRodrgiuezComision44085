@@ -13,11 +13,7 @@
 
 .sugerenciasNavLogo {
     grid-column: 1;
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @include box-size(auto, auto, end, center);
 }
 
 .sugerenciasNavImg {

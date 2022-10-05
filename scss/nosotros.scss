@@ -3,22 +3,14 @@
 /*Fin de barra Nosotros*/
 /*Comienzo de main Nosotros*/
 .nosotrosMain {
-    display: flex;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: space-evenly;
+    @include box-size(100%, auto, space-evenly, center);
     margin-bottom: 12vh;
 }
 
 .nosotrosSection {
-    width: 50%;
-    height: 100%;
-    display: flex;
+    @include box-size(50%, 100%, space-evenly, center);
     align-content: center;
     padding: 2%;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
 
     h2 {

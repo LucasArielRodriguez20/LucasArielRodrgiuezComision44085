@@ -87,8 +87,9 @@ nav ul li a {
 }
 
 .miCuenta {
-  width: 30%;
   display: flex;
+  width: 30%;
+  height: auto;
   justify-content: flex-end;
   align-items: center;
 }
@@ -195,9 +196,11 @@ footer ul li a {
 /*Fin barra
 /*Comienzo de header*/
 .carrousel {
-  height: auto;
   display: flex;
-  align-content: center;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
   margin: auto;
   border-top: #000000 solid 3px;
   padding: 5vh;
@@ -215,8 +218,8 @@ footer ul li a {
   display: flex;
   width: 100%;
   height: auto;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 12vh;
 }
 .indexMain aside div {
@@ -244,7 +247,7 @@ footer ul li a {
   text-align: center;
   flex-wrap: wrap;
 }
-.ofertas a h1 {
+.ofertas a h2 {
   width: 100%;
   height: 2vh;
 }
@@ -296,13 +299,14 @@ footer ul li a {
 
 /*Fin de main*/
 /*Barra de navegacion Busqueda*/
-.carritoBusqueda {
-  width: auto;
+.carritoBusqueda, .miCuentaBusqueda {
   display: flex;
+  width: auto;
+  height: auto;
   justify-content: flex-end;
   align-items: center;
 }
-.carritoBusqueda a {
+.carritoBusqueda a, .miCuentaBusqueda a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,17 +316,11 @@ footer ul li a {
   border-radius: 4vh;
   background-color: #f9f7f7;
 }
-.carritoBusqueda a img {
+.carritoBusqueda a img, .miCuentaBusqueda a img {
   width: 100%;
   height: 80%;
 }
 
-.miCuentaBusqueda {
-  width: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 .miCuentaBusqueda a {
   display: flex;
   justify-content: center;
@@ -352,8 +350,8 @@ footer ul li a {
   display: flex;
   width: 100%;
   height: 80em;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0px;
 }
 .busquedaMain aside {
@@ -367,9 +365,9 @@ footer ul li a {
 }
 
 .busquedaMain section {
+  display: flex;
   width: 100%;
   height: auto;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -395,7 +393,7 @@ footer ul li a {
   width: 50%;
   height: 13vh;
 }
-.busquedaMain section div figure p {
+.busquedaMain section div figure p, .busquedaMain section div figure .informacionContacto h3, .informacionContacto .busquedaMain section div figure h3 {
   width: 100%;
   height: 3vh;
   text-align: center;
@@ -413,8 +411,9 @@ footer ul li a {
 /*Fin de main*/
 /*Comienzo de Barra Contacto*/
 .miCuentaContacto {
-  width: auto;
   display: flex;
+  width: auto;
+  height: auto;
   justify-content: flex-end;
   align-items: center;
 }
@@ -432,11 +431,11 @@ footer ul li a {
 /*Fin de Barra Contacto*/
 /*Comienzo de main Contacto*/
 .contactoMain {
+  display: flex;
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 12vh;
 }
 
@@ -465,15 +464,10 @@ footer ul li a {
   flex-wrap: wrap;
   text-align: center;
 }
-.informacionContacto p {
+.informacionContacto p, .informacionContacto h3 {
   width: 100%;
   height: 15%;
 }
-.informacionContacto h3 {
-  width: 100%;
-  height: 15%;
-}
-
 /*Fin de main Contacto*/
 /*Comienzo de barra Inicio de usuario*/
 .mr-30 {
@@ -487,11 +481,11 @@ footer ul li a {
 /*Fin de barra Inicio de usuario*/
 /*Comienzo de main Inicio de usuario*/
 .usuarioMain {
-  width: 100%;
   display: flex;
+  width: 100%;
   height: auto;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 12vh;
 }
 
@@ -539,19 +533,19 @@ footer ul li a {
   display: flex;
   width: 100%;
   height: auto;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 12vh;
 }
 
 .nosotrosSection {
+  display: flex;
   width: 50%;
   height: 100%;
-  display: flex;
-  align-content: center;
-  padding: 2%;
   justify-content: space-evenly;
   align-items: center;
+  align-content: center;
+  padding: 2%;
   flex-wrap: wrap;
 }
 .nosotrosSection h2 {
@@ -561,7 +555,7 @@ footer ul li a {
   margin-bottom: 11%;
   font-size: 5vh;
 }
-.nosotrosSection p {
+.nosotrosSection p, .nosotrosSection .informacionContacto h3, .informacionContacto .nosotrosSection h3 {
   width: 80%;
   height: auto;
   font-size: 2.5vh;
@@ -597,9 +591,9 @@ footer ul li a {
 }
 
 .nuevoUsuarioImg {
+  display: flex;
   width: 50%;
   height: auto;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -675,9 +669,9 @@ footer ul li a {
 
 .sugerenciasNavLogo {
   grid-column: 1;
+  display: flex;
   width: auto;
   height: auto;
-  display: flex;
   justify-content: end;
   align-items: center;
 }
@@ -1066,7 +1060,7 @@ footer ul li a {
   .busquedaDN {
     display: flex;
   }
-  .carritoBusqueda a {
+  .carritoBusqueda a, .miCuentaBusqueda a {
     margin-right: 0;
     height: 10vh;
     width: 22vw;

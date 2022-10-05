@@ -1,55 +1,53 @@
 /*Comienzo de barra Inicio de usuario*/
-.mr-30{
+.mr-30 {
   margin-right: 15vw;
 }
-.mr-5{
+
+.mr-5 {
   margin-right: 5vw;
 }
+
 /*Fin de barra Inicio de usuario*/
 /*Comienzo de main Inicio de usuario*/
 .usuarioMain {
-    width: 100%;
-    display: flex;
+  @include box-size(100%, auto, space-evenly, center);
+  margin-bottom: 12vh;
+}
+
+.usuarioSection {
+  @include flex-style;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+
+  div {
+    width: 50%;
     height: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 12vh;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 38vh;
+
+    img {
+      width: 25%;
+      height: 50%;
+    }
   }
-  
-  .usuarioSection {
+
+  form {
     @include flex-style;
     width: 100%;
-    height: auto;
+    height: 50vh;
+    text-align: center;
     flex-wrap: wrap;
-  
-    div {
-      width: 50%;
-      height: auto;
+
+    input {
+      width: 60%;
+      height: 15%;
       text-align: center;
-      margin-top: 10vh;
-      margin-bottom: 10vh;
-      border-radius: 38vh;
-  
-      img {
-        width: 25%;
-        height: 50%;
-      }
-    }
-  
-    form {
-      @include flex-style;
-      width: 100%;
-      height: 50vh;
-      text-align: center;
-      flex-wrap: wrap;
-  
-      input {
-        width: 60%;
-        height: 15%;
-        text-align: center;
-        border: solid 1px;
-      }
+      border: solid 1px;
     }
   }
-  
-  /*Fin de main Inicio de usuario*/
+}
+
+/*Fin de main Inicio de usuario*/

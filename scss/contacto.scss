@@ -1,9 +1,7 @@
 /*Comienzo de Barra Contacto*/
-.miCuentaContacto{
-    width: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.miCuentaContacto {
+    @include box-size(auto, auto, flex-end, center);
+
     a {
         width: 10vw;
         height: 12vh;
@@ -11,16 +9,13 @@
         @include flex-style;
         border-radius: 4vh;
         background-color: $colorBlanco;
-      }
+    }
 }
+
 /*Fin de Barra Contacto*/
 /*Comienzo de main Contacto*/
 .contactoMain {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include box-size(100%, auto, space-evenly, center);
     margin-bottom: 12vh;
 }
 
@@ -52,8 +47,7 @@
     }
 
     h3 {
-        width: 100%;
-        height: 15%;
+        @extend p;
     }
 }
 

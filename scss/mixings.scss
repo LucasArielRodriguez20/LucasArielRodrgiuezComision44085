@@ -3,3 +3,10 @@
     justify-content: center;
     align-items: center;
 }
+@mixin box-size($width,$height,$justify,$aling) {
+    display: flex;
+    width: $width;
+    height: $height;
+    justify-content: $justify;
+    align-items: $aling;
+}

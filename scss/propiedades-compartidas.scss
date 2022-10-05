@@ -83,10 +83,7 @@ nav {
 }
 
 .miCuenta {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include box-size(30%,auto,flex-end,center);
 
   a {
     width: 40%;

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-    "sass:watch": "sass --watch scss/main.scss css/main.css"
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "purge": "purgecss --css ./css/*.css --content *.html --output ./src"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/LucasArielRodriguez20/htmlPrueba#readme",
   "dependencies": {
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "purgecss": "^5.0.0"
   }
 }
