@@ -1,118 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>El Farol Autoservicio</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    <link  rel="icon"   href="./src/favicon/favicon_io/favicon.ico" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="description" content="El clásico almacén de barrio llevado a el ámbito online con sus promociones y precios especiales.">
+  <meta name="keywords" content="Productos , Articulos , ofertas , Promociones ,Almacen , Shop">
+  <meta name="author" content="Lucas Ariel Rodriguez">
+  <meta name="robots" content="index,follow">
+  <title>El Farol Autoservicio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+  <link rel="icon" href="./src/favicon/favicon_io/favicon.ico" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md bg-blue">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5 animacion-crecer" href="./index.html">
-            <img class="logoFarol" src="./src/logo.svg" alt="Logo del Farol Autoservicio">
+  <nav class="navbar navbar-expand-md bg-blue">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 bg-B animacion-crecer" href="./index.html">
+        <img class="logoFarol" src="./src/logo.svg" alt="Logo del Farol Autoservicio">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex flex-wrap justify-content-center" role="search">
+          <input class="form-control me-2 busquedaTextbox" type="search" placeholder="Ingrese un Articulo"
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <div class="opcionesDeBusqueda justify-content-around">
+            <a class="me-1 animacion-cambio-color" href="./pages/error.html">Categorías</a>
+            <a class="animacion-cambio-color" href="./pages/error.html">Promociones Bancarias</a>
+          </div>
+        </form>
+        <div class="miCuenta">
+          <a class="animacion-crecer" href="./pages/ingreso-de-usuarios.html">
+            <img src="./src/user-solid.svg" alt="Mi Cuenta logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex flex-wrap justify-content-center" role="search">
-              <input class="form-control me-2 busquedaTextbox" type="search" placeholder="Ingrese un Articulo" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-              <div class="opcionesDeBusqueda justify-content-around">
-                <a class="me-1 animacion-cambio-color" href="#">Categorías</a>
-                <a class="animacion-cambio-color" href="#">Promociones Bancarias</a>
-              </div>
-            </form>
-            <div class="miCuenta">
-              <a class="animacion-crecer" href="./pages/ingreso-de-usuarios.html">
-                <img  src="./src/user-solid.svg" alt="Mi Cuenta logo">
-              </a>
-            </div>
-            <ul class="menuIndex">
-              <li>
-                <a class="animacion-crecer" href="./pages/ingreso-de-usuarios.html">
-                  <img  src="./src/user-solid.svg" alt="Mi Cuenta logo">
-                </a>
-              </li>
-              <li>
-                <a class="me-1 animacion-cambio-color" href="#">Categorías</a>
-              </li>
-              <li>
-                <a class="animacion-cambio-color" href="#">Promociones Bancarias</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    <header class="carrousel">
-        <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1500">
-              <a href="./pages/busqueda-articulos.html">
-                <img src="./src/sliders/slider1.webp" class="d-block w-100" alt="Promociones">
-              </a>
-            </div>
-            <div class="carousel-item" data-bs-interval="1500">
-              <a  href="./pages/busqueda-articulos.html">
-                <img src="./src/sliders/slider2.webp" class="d-block w-100" alt="Productos">
-              </a>
-            </div>
-            <div class="carousel-item" data-bs-interval="1500">
-              <a  href="./pages/busqueda-articulos.html">
-                <img src="./src/sliders/slider3.webp" class="d-block w-100" alt="Productos">
-              </a>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </header>
-    <main class="indexMain">
-        <div class="cuenta">
-            <a class="animacion-cambio-color" href="./pages/nuevo-usuario.html">
-                <img src="./src/user-pen-solid.svg" alt="usuario icono">
-                <h1 >¿Ya tienes una cuenta con nosotros?</h1>
+        <ul class="menuIndex">
+          <li>
+            <a class="animacion-crecer" href="./pages/ingreso-de-usuarios.html">
+              <img src="./src/user-solid.svg" alt="Mi Cuenta logo">
             </a>
-        </div>
-        <div class="ofertas">
-            <a class="animacion-cambio-color" href="./pages/busqueda-articulos.html">
-                <img src="./src/cart-shopping-solid.svg" alt="Carrito de Compras">
-                <h2>Ofertas diarias</h2> 
-            </a> 
-        </div>
-        <div class="envio">
-            <a class="animacion-cambio-color" href="#">
-                <img src="./src/truck-ramp-box-solid.svg" alt="icono de pedidos">
-                <h2>Nuestras formas de entrega</h2>
-            </a>
-        </div>
-    </main>
-    <footer>
-        <ul>
-            <li class="accessLeft">
-                <a class="animacion-crecer" href="./pages/nosotros.html" >Sobre Nosotros</a>
-            </li>
-            <li class="accessCenter">
-                <a class="animacion-crecer" href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="accessRight">
-                <a class="animacion-crecer" href="./pages/sugerencias.html">Sugerencias</a>
-            </li>
+          </li>
+          <li>
+            <a class="me-1 animacion-cambio-color" href="./pages/error.html">Categorías</a>
+          </li>
+          <li>
+            <a class="animacion-cambio-color" href="./pages/error.html">Promociones Bancarias</a>
+          </li>
         </ul>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </nav>
+  <header class="carrousel">
+    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1500">
+          <a href="./pages/busqueda-articulos.html">
+            <img src="./src/sliders/slider1.webp" class="d-block w-100" alt="Nuestro local">
+          </a>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <a href="./pages/busqueda-articulos.html">
+            <img src="./src/sliders/slider2.webp" class="d-block w-100" alt="Productos envasados">
+          </a>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <a href="./pages/busqueda-articulos.html">
+            <img src="./src/sliders/slider3.webp" class="d-block w-100" alt="Articulos de verduleria">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main class="indexMain">
+    <div class="cuenta">
+      <a class="animacion-cambio-color" href="./pages/nuevo-usuario.html">
+        <img src="./src/user-pen-solid.svg" alt="icono usuario">
+        <h1>¿Ya tienes una cuenta con nosotros?</h1>
+      </a>
+    </div>
+    <div class="ofertas">
+      <a class="animacion-cambio-color" href="./pages/busqueda-articulos.html">
+        <img src="./src/cart-shopping-solid.svg" alt="icono Carrito de Compras">
+        <h2>Ofertas diarias</h2>
+      </a>
+    </div>
+    <div class="envio">
+      <a class="animacion-cambio-color" href="./pages/error.html">
+        <img src="./src/truck-ramp-box-solid.svg" alt="icono de pedidos">
+        <h2>Nuestras formas de entrega</h2>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div class="redes">
+      <ul>
+        <li class="elementoEliminado">
+          <h3>Seguinos en nuestras redes:</h3>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/error.html">
+            <img src="./src/instagram.svg" alt="Logo de instagram">
+          </a>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/error.html">
+            <img src="./src/facebook.svg" alt="Logo de facebook">
+          </a>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/error.html">
+            <img src="./src/twitter.svg" alt="Logo de twitter">
+          </a>
+        </li>
+      </ul>
+      <ul class="otrasSecciones">
+        <li class="elementoEliminado">
+          <h3>Nuestras secciones:</h3>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a class="animacion-crecer" href="./pages/sugerencias.html">Sugerencias</a>
+        </li>
+      </ul>
+      <ul class="elementoEliminado">
+        <li >
+          <h3>Donde encontrarnos:</h3>
+        </li>
+        <li>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.280521126353!2d-58.41670908479234!3d-34.69810388043507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccf84b4cd84f%3A0x268105e6be936242!2sAutoservicio%20%22El%20Farol%22!5e0!3m2!1ses-419!2sar!4v1661994739306!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

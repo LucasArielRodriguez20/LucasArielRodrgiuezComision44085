@@ -25,8 +25,8 @@
     flex-wrap: wrap;
 
     div {
-        width: 85%;
         @include flex-style;
+        height: auto;
         margin: 2%;
         background-color: $colorBlanco2;
     }
@@ -34,6 +34,15 @@
 
 .contactoHorario {
     height: 12vh;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        padding: 3vw;
+        width: 84.6vw;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .informacionContacto {

@@ -29,6 +29,13 @@ nav ul li a {
   text-align: center;
 }
 
+.bg-B {
+  background-color: #f9f7f7;
+  border-radius: 2vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
 .menuDesplegable {
   display: none;
 }
@@ -88,15 +95,15 @@ nav ul li a {
 
 .miCuenta {
   display: flex;
-  width: 30%;
+  width: auto;
   height: auto;
   justify-content: flex-end;
   align-items: center;
 }
 .miCuenta a {
-  width: 40%;
-  height: 5em;
-  margin-right: 1em;
+  width: auto;
+  height: auto;
+  margin-right: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,8 +111,21 @@ nav ul li a {
   background-color: #f9f7f7;
 }
 .miCuenta a img {
-  width: 100%;
-  height: 80%;
+  width: 8vw;
+  height: 13vh;
+  padding: 2vh;
+}
+
+.bg-error {
+  background-color: #3f72af;
+  color: #f9f7f7;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+  height: 6vh;
+  margin: auto;
+  padding: 2vw;
 }
 
 .bg-blue {
@@ -163,17 +183,65 @@ footer ul li a {
   display: flex;
 }
 
-.accessLeft {
-  margin-left: 2vw;
+.redes {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.accessCenter {
+.redes h3 {
+  color: #f9f7f7;
+  font-size: 2vw;
+  width: 25vw;
+  height: 6vh;
+}
+.redes h2 {
+  color: #f9f7f7;
+  font-size: 2vw;
+  width: 25vw;
+  height: 6vh;
+}
+.redes h1 {
+  color: #f9f7f7;
+  font-size: 2vw;
+  width: 25vw;
+  height: 6vh;
+}
+.redes ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.redes ul li {
+  width: auto;
+  height: auto;
+  margin: 2vw;
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
-
-.accessRight {
-  justify-content: flex-end;
-  margin-right: 2vw;
+.redes ul li iframe {
+  width: 24vw;
+  height: 64vh;
+}
+.redes ul li a {
+  width: auto;
+  height: auto;
+  font-size: 1.3vw;
+}
+.redes ul li a img {
+  width: 10vw;
+  height: 6vh;
+}
+.redes .otrasSecciones li a {
+  width: 12.5vw;
+  height: 11.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Fin del Footer*/
@@ -363,6 +431,77 @@ footer ul li a {
   flex-wrap: wrap;
   background-color: #dbe2ef;
 }
+.busquedaMain div {
+  display: flex;
+  flex-direction: column;
+}
+.busquedaMain div h1 {
+  font-size: 4vw;
+}
+.busquedaMain div .filtrosContainer {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.busquedaMain div .filtrosContainer form {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.busquedaMain div .filtrosContainer form div {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.busquedaMain div .filtrosContainer form input {
+  width: 8vw;
+  height: 4vw;
+}
+.busquedaMain div .filtrosContainer form .promocionesProductos label {
+  font-size: 1vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+.busquedaMain div .filtrosContainer form .promocionesProductos input {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  align-self: flex-end;
+}
+.busquedaMain div .filtrosContainer form .precio {
+  margin-bottom: 1vw;
+}
+.busquedaMain div .filtrosContainer form .precio div {
+  flex-direction: row;
+}
+.busquedaMain div .filtrosContainer form .precio div input {
+  width: 6vw;
+  height: 2vw;
+  margin-left: 1vw;
+  align-self: flex-end;
+}
+.busquedaMain div .filtrosContainer form .catProductos {
+  margin-bottom: 1vw;
+}
+.busquedaMain div .filtrosContainer form .catProductos div {
+  flex-direction: row;
+  margin-top: 1vw;
+}
+.busquedaMain div .filtrosContainer form .catProductos div input {
+  width: 11vw;
+  height: 3vw;
+  margin-left: 1vw;
+  align-self: flex-end;
+}
 
 .busquedaMain section {
   display: flex;
@@ -447,16 +586,24 @@ footer ul li a {
   flex-wrap: wrap;
 }
 .contactoSection div {
-  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
   margin: 2%;
   background-color: #dbe2ef;
 }
 
 .contactoHorario {
   height: 12vh;
+  display: flex;
+  justify-content: center;
+}
+.contactoHorario h2 {
+  padding: 3vw;
+  width: 84.6vw;
+  display: flex;
+  justify-content: center;
 }
 
 .informacionContacto {
@@ -471,7 +618,7 @@ footer ul li a {
 /*Fin de main Contacto*/
 /*Comienzo de barra Inicio de usuario*/
 .mr-30 {
-  margin-right: 15vw;
+  margin-right: 8vw;
 }
 
 .mr-5 {
@@ -588,6 +735,7 @@ footer ul li a {
   align-items: center;
   width: 100%;
   height: auto;
+  margin-bottom: 10vw;
 }
 
 .nuevoUsuarioImg {
@@ -607,6 +755,10 @@ footer ul li a {
   margin-bottom: 6vh;
   margin-top: 6vh;
   margin-right: 6vh;
+}
+.nuevoUsuarioImg div img {
+  width: 20vw;
+  height: 20vh;
 }
 
 .nuevoUsuarioSection {
@@ -797,6 +949,9 @@ footer ul li a {
 /*Responsive*/
 @media (max-width: 768px) {
   /*Barra de navegación responsive*/
+  .container-fluid a {
+    margin-left: 2vw !important;
+  }
   nav {
     display: flex;
     padding: 0%;
@@ -838,7 +993,7 @@ footer ul li a {
     display: none;
   }
   .carrousel {
-    height: auto;
+    height: 80vw;
     margin-top: 2vh;
     border-top: none;
   }
@@ -866,10 +1021,13 @@ footer ul li a {
   }
   .menuIndex li a {
     background-color: #f9f7f7;
-    height: auto;
-    width: auto;
+    height: 11vh;
+    width: 28vw;
     border-radius: 2vh;
     padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menuIndex li a img {
     height: 6vh;
@@ -877,7 +1035,8 @@ footer ul li a {
   }
   /*Fin barra*/
   .logoFarol {
-    width: 12vw;
+    height: 10vh;
+    width: 18vw;
   }
   .opcionesDeBusqueda {
     display: none;
@@ -1054,6 +1213,12 @@ footer ul li a {
     width: 100%;
     margin-right: 0;
   }
+  .nuevoUsuarioImg div img {
+    width: 35vw;
+  }
+  .fs-3vw {
+    font-size: 3vw !important;
+  }
   /*Nuevo Usuario fin*/
   /*Busqueda*/
   /*Barra Busqueda*/
@@ -1188,7 +1353,54 @@ footer ul li a {
     padding: 4%;
     border-radius: 3vh;
   }
+  .redes ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .redes ul li a img {
+    width: 28vw;
+    height: 6vh;
+  }
+  .redes .otrasSecciones li a {
+    width: 33vw;
+    height: 7vh;
+    font-size: 3.5vw;
+  }
+  .elementoEliminado {
+    display: none !important;
+  }
   /* fin footer responsive*/
+  .bg-error {
+    width: 24vw;
+    height: 6vh;
+  }
+}
+@media (max-width: 450px) {
+  .logoFarol {
+    height: 10vh;
+    width: 18vw;
+  }
+  .container-fluid a {
+    margin-left: 2vw !important;
+  }
+  .miCuentaContacto a {
+    width: 28vw;
+    font-size: 4vw;
+  }
+  .miCuentaBusqueda a {
+    font-size: 3vw;
+    width: 35vw;
+  }
+  .carritoBusqueda a, .miCuentaBusqueda a {
+    width: 35vw;
+  }
+  .nuevoUsuarioImg div img {
+    width: 35vw;
+  }
+  .bg-error {
+    width: 30vw;
+    height: 6vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

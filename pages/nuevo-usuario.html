@@ -3,7 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Nuevo Usuario</title>
+    <meta name="description" content="Crear una cuenta en el Farol Autoservicio para comprar todo lo que necesites.">
+    <meta name="keywords" content="nueva cuenta , teléfono , email, ingreso">
+    <meta name="author" content="Lucas Ariel Rodriguez">
+    <meta name="robots" content="index,follow">
+    <title>El Farol Autoservicio-Nuevo Usuario</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
@@ -15,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-md bg-blue">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 animacion-crecer" href="../index.html">
+          <a class="navbar-brand ms-5 bg-B animacion-crecer" href="../index.html">
             <img class="logoFarol" src="../src/favicon/favicon_io/android-chrome-192x192.svg " alt="Logo del Farol Autoservicio">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +33,7 @@
               </div>
             </form>
             <div class="miCuentaBusqueda mr-5">
-                <a class=" animacion-cambio-color animacion-crecer" href="../index.html">Volver</a>
+                <a class=" animacion-cambio-color animacion-crecer fs-3vw" href="../index.html">Volver</a>
             </div>
             <div class="miCuentaBusqueda">
                 <a class="animacion-crecer animacion-cambio-color" href="./ingreso-de-usuarios.html">
@@ -42,12 +46,12 @@
     <main class="nuevoUsuarioMain mt-10">
         <section class="nuevoUsuarioImg">
             <div>
-                Inserte una imagen(El usuario introduce una imagen)
+                <img  src="../src/users-solid.svg" alt="Mi Cuenta logo">
             </div>
         </section>
         <section class="nuevoUsuarioSection flexStart">
-           <form class="formularioIngreso" action="#">
-                <h2>Formulario de Ingreso</h2>
+           <form class="formularioIngreso" action="./error.html">
+                <h1>Formulario de Ingreso</h1>
                 <input type="text" placeholder="Ingrese su nombre">
                 <input type="text" placeholder="Ingrese una contraseña">
                 <input type="email" placeholder="Ingrese su mail ej elfarol@">
@@ -55,19 +59,55 @@
            </form>
         </section>
     </main>
-    <footer class="mt-10">
-        <ul>
-            <li class="accessLeft">
-                <a class="animacion-crecer animacion-cambio-color" href="./nosotros.html" >Sobre Nosotros</a>
+    <footer>
+        <div class="redes">
+          <ul>
+            <li class="elementoEliminado">
+              <h2>Seguinos en nuestras redes:</h2>
             </li>
-            <li class="accessCenter">
-                <a class="animacion-crecer animacion-cambio-color" href="./contacto.html">Contacto</a>
+            <li>
+              <a class="animacion-crecer" href="../pages/error.html">
+                <img src="../src/instagram.svg" alt="Logo de instagram">
+              </a>
             </li>
-            <li class="accessRight">
-                <a class="animacion-crecer animacion-cambio-color" href="./sugerencias.html">Sugerencias</a>
+            <li>
+              <a class="animacion-crecer" href="../pages/error.html">
+                <img src="../src/facebook.svg" alt="Logo de facebook">
+              </a>
             </li>
-        </ul>
-    </footer>
+            <li>
+              <a class="animacion-crecer" href="../pages/error.html">
+                <img src="../src/twitter.svg" alt="Logo de twitter">
+              </a>
+            </li>
+          </ul>
+          <ul class="otrasSecciones">
+            <li class="elementoEliminado">
+              <h3>Nuestras secciones:</h3>
+            </li>
+            <li>
+              <a class="animacion-crecer animacion-cambio-color" href="./sugerencias.html">Sugerencias</a>
+            </li>
+            <li>
+              <a class="animacion-crecer animacion-cambio-color" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a class="animacion-crecer animacion-cambio-color" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <ul class="elementoEliminado">
+            <li>
+              <h3>Donde encontrarnos:</h3>
+            </li>
+            <li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.280521126353!2d-58.41670908479234!3d-34.69810388043507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccf84b4cd84f%3A0x268105e6be936242!2sAutoservicio%20%22El%20Farol%22!5e0!3m2!1ses-419!2sar!4v1661994739306!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </li>
+          </ul>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

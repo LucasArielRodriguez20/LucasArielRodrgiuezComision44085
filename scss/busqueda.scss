@@ -57,6 +57,79 @@
         flex-wrap: wrap;
         background-color: $colorBlanco2;
     }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 4vw;
+        }
+
+        .filtrosContainer {
+            @include box-size(auto, auto, center, center);
+            flex-direction: column;
+
+            form {
+                @include box-size(auto, auto, center, flex-start);
+                flex-direction: column;
+
+                div {
+                    @include box-size(auto, auto, center, flex-start);
+                    flex-direction: column;
+                }
+                input{
+                    width: 8vw;
+                    height: 4vw;
+                }
+                .promocionesProductos {
+                    label {
+                        font-size: 1vw;
+                        margin-left: 1vw;
+                        margin-top: 1vw;
+                    }
+
+                    input {
+                        width: 2vw;
+                        height: 2vw;
+                        margin-left: 1vw;
+                        align-self: flex-end;
+                    }
+                }
+
+                .precio {
+                    margin-bottom: 1vw;
+
+                    div {
+                        flex-direction: row;
+
+                        input {
+                            width: 6vw;
+                            height: 2vw;
+                            margin-left: 1vw;
+                            align-self: flex-end;
+                        }
+                    }
+
+                }
+
+                .catProductos {
+                    margin-bottom: 1vw;
+                    div {
+                        flex-direction: row;
+                        margin-top: 1vw;
+                        input {
+                            width: 11vw;
+                            height: 3vw;
+                            margin-left: 1vw;
+                            align-self: flex-end;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 .busquedaMain section {

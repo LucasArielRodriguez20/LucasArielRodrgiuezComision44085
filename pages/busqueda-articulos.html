@@ -3,7 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Busqueda de articulos</title>
+    <meta name="description" content="Busca los mejores precios y ofertas en el Farol Autoservicio.">
+    <meta name="keywords" content="Productos , Articulos , busqueda , filtros">
+    <meta name="author" content="Lucas Ariel Rodriguez">
+    <meta name="robots" content="index,follow">
+    <title>El Farol Autoservicio-Busqueda de articulos</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
@@ -15,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-md bg-blue">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 animacion-crecer" href="../index.html">
+          <a class="navbar-brand ms-5 bg-B animacion-crecer" href="../index.html">
             <img class="logoFarol" src="../src/favicon/favicon_io/android-chrome-192x192.svg " alt="Logo del Farol Autoservicio">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +30,12 @@
               <input class="form-control me-2 busquedaTextbox" type="search" placeholder="Ingrese un Articulo" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
               <div class="opcionesDeBusqueda justify-content-around">
-                <a class="me-1 animacion-cambio-color" href="#">Categorías</a>
-                <a class="animacion-cambio-color" href="#">Promociones Bancarias</a>
+                <a class="me-1 animacion-cambio-color" href="../pages/error.html">Categorías</a>
+                <a class="animacion-cambio-color" href="../pages/error.html">Promociones Bancarias</a>
               </div>
             </form>
             <div class="carritoBusqueda">
-                <a class="animacion-crecer animacion-cambio-color" href="#">
+                <a class="animacion-crecer animacion-cambio-color" href="../pages/error.html">
                   <img  src="../src/cart-shopping-solid.svg" alt="Carrito logo">
                 </a>
             </div>
@@ -41,13 +45,13 @@
               </a>
             </div>
             <div class="miCuentaBusqueda busquedaDN">
-                <a class="animacion-cambio-color" href="#">Promociones Bancarias</a>
+                <a class="animacion-cambio-color" href="../pages/error.html">Promociones Bancarias</a>
             </div>
             <div class="miCuentaBusqueda busquedaDN">
-                <a class="me-1 animacion-cambio-color" href="#">Categorías</a>
+                <a class="me-1 animacion-cambio-color" href="../pages/error.html">Categorías</a>
             </div>
             <div class="miCuentaBusqueda busquedaDN">
-                <a class="me-1 animacion-cambio-color" href="#">Filtros</a>
+                <a class="me-1 animacion-cambio-color" href="../pages/error.html">Filtros</a>
             </div>
           </div>
         </div>
@@ -56,110 +60,136 @@
         <aside>
             <div>
                 <h1>Filtros</h1>
+                <div class="filtrosContainer">
+                    <form action="./error.html">
+                        <div class="promocionesProductos">
+                            <h2>Promociones:</h2>
+                            <label for="Descuento">Producto con Descuento</label> 
+                            <input type="checkbox" name="Descuento" id="">
+                            <label for="Descuento">Producto con cuotas sin interes</label> 
+                            <input type="checkbox" name="Cuotas" id="">
+                        </div>
+                        <div class="precio">
+                            <h2>Precio:</h2>
+                            <div>
+                               <input type="text" placeholder="Precio max">
+                                <input type="text" placeholder="Precio min"> 
+                            </div>
+                        </div>
+                        <div class="catProductos">
+                            <h2>Categorías de productos:</h2>
+                            <div>
+                                <input type="submit" value="Productos x mayor">
+                                <input type="submit" value="Productos x menor">
+                            </div>
+                        </div>
+                        <input type="submit" value="Filtrar">
+                    </form>
+                </div>
             </div>
         </aside>
         <section>
                 <div>
                     <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
                         <figcaption>Lata de pepsix473ml</figcaption>
                         <p class="Precio">$120,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
                         <figcaption>Lata de pepsix473ml</figcaption>
                         <p class="Precio">$120,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
-                        <figcaption>Lata de pepsix473ml</figcaption>
-                        <p class="Precio">$120,00</p>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <img src="../src/productos/lata-coca.svg" alt="Producto">
-                        <figcaption>Lata de cocax473ml</figcaption>
-                        <p class="Precio">$130,00</p>
-                    </figure>
-                </div>
-                <div class="articuloEliminado">
-                    <figure>
-                        <img src="../src/productos/lata-coca.svg" alt="Producto">
-                        <figcaption>Lata de cocax473ml</figcaption>
-                        <p class="Precio">$130,00</p>
-                    </figure>
-                </div>
-                <div class="articuloEliminado">
-                    <figure>
-                        <img src="../src/productos/lata-coca.svg" alt="Producto">
-                        <figcaption>Lata de cocax473ml</figcaption>
-                        <p class="Precio">$130,00</p>
-                    </figure>
-                </div>
-                <div class="articuloEliminado">
-                    <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
-                        <figcaption>Lata de pepsix473ml</figcaption>
-                        <p class="Precio">$120,00</p>
-                    </figure>
-                </div>
-                <div class="articuloEliminado">
-                    <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
-                        <figcaption>Lata de pepsix473ml</figcaption>
-                        <p class="Precio">$120,00</p>
-                    </figure>
-                </div>
-                <div class="articuloEliminado">
-                    <figure>
-                        <img src="../src/productos/lata-pepsi.svg" alt="Producto">
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
                         <figcaption>Lata de pepsix473ml</figcaption>
                         <p class="Precio">$120,00</p>
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="../src/productos/lata-stella.svg" alt="Producto">
+                        <img src="../src/productos/lata-coca.svg" alt="Producto coca-colax473ml">
+                        <figcaption>Lata de cocax473ml</figcaption>
+                        <p class="Precio">$130,00</p>
+                    </figure>
+                </div>
+                <div class="articuloEliminado">
+                    <figure>
+                        <img src="../src/productos/lata-coca.svg" alt="Producto coca-colax473ml">
+                        <figcaption>Lata de cocax473ml</figcaption>
+                        <p class="Precio">$130,00</p>
+                    </figure>
+                </div>
+                <div class="articuloEliminado">
+                    <figure>
+                        <img src="../src/productos/lata-coca.svg" alt="Producto coca-colax473ml">
+                        <figcaption>Lata de cocax473ml</figcaption>
+                        <p class="Precio">$130,00</p>
+                    </figure>
+                </div>
+                <div class="articuloEliminado">
+                    <figure>
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
+                        <figcaption>Lata de pepsix473ml</figcaption>
+                        <p class="Precio">$120,00</p>
+                    </figure>
+                </div>
+                <div class="articuloEliminado">
+                    <figure>
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
+                        <figcaption>Lata de pepsix473ml</figcaption>
+                        <p class="Precio">$120,00</p>
+                    </figure>
+                </div>
+                <div class="articuloEliminado">
+                    <figure>
+                        <img src="../src/productos/lata-pepsi.svg" alt="Producto pepsix473ml">
+                        <figcaption>Lata de pepsix473ml</figcaption>
+                        <p class="Precio">$120,00</p>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../src/productos/lata-stella.svg" alt="Producto stellax473ml">
                         <figcaption>Lata de stella noirx473ml</figcaption>
                         <p class="Precio">$380,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-stella.svg" alt="Producto">
+                        <img src="../src/productos/lata-stella.svg" alt="Producto stellax473ml">
                         <figcaption>Lata de stella noirx473ml</figcaption>
                         <p class="Precio">$380,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-stella.svg" alt="Producto">
+                        <img src="../src/productos/lata-stella.svg" alt="Producto stellax473ml">
                         <figcaption>Lata de stella noirx473ml</figcaption>
                         <p class="Precio">$380,00</p>
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="../src/productos/lata-heik710.svg" alt="Producto">
+                        <img src="../src/productos/lata-heik710.svg" alt="Producto heinekenx473ml">
                         <figcaption>Lata de heinekenx710ml</figcaption>
                         <p class="Precio">$400,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-heik710.svg" alt="Producto">
+                        <img src="../src/productos/lata-heik710.svg" alt="Producto heinekenx473ml">
                         <figcaption>Lata de heinekenx710ml</figcaption>
                         <p class="Precio">$400,00</p>
                     </figure>
                 </div>
                 <div class="articuloEliminado">
                     <figure>
-                        <img src="../src/productos/lata-heik710.svg" alt="Producto">
+                        <img src="../src/productos/lata-heik710.svg" alt="Producto heinekenx473ml">
                         <figcaption>Lata de heinekenx710ml</figcaption>
                         <p class="Precio">$400,00</p>
                     </figure>
@@ -167,17 +197,53 @@
         </section>     
     </main>
     <footer>
-        <ul>
-            <li class="animacion-crecer accessLeft">
-                <a href="./nosotros.html" >Sobre Nosotros</a>
-            </li>
-            <li class="animacion-crecer accessCenter">
-                <a href="./contacto.html">Contacto</a>
-            </li>
-            <li class="animacion-crecer accessRight">
-                <a href="./sugerencias.html">Sugerencias</a>
-            </li>
-        </ul>
+        <div class="redes">
+            <ul>
+                <li class="elementoEliminado">
+                    <h3>Seguinos en nuestras redes:</h3>
+                </li>
+                <li>
+                    <a class="animacion-crecer" href="../pages/error.html">
+                        <img src="../src/instagram.svg" alt="Logo de instagram">
+                    </a>
+                </li>
+                <li>
+                    <a class="animacion-crecer" href="../pages/error.html">
+                        <img src="../src/facebook.svg" alt="Logo de facebook">
+                    </a>
+                </li>
+                <li>
+                    <a class="animacion-crecer" href="../pages/error.html">
+                        <img src="../src/twitter.svg" alt="Logo de twitter">
+                    </a>
+                </li>
+            </ul>
+            <ul class="otrasSecciones">
+                <li class="elementoEliminado">
+                    <h3>Nuestras secciones:</h3>
+                </li>
+                <li>
+                    <a class="animacion-crecer animacion-cambio-color" href="./nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a class="animacion-crecer animacion-cambio-color" href="./sugerencias.html">Sugerencias</a>
+                </li>
+                <li>
+                    <a class="animacion-crecer animacion-cambio-color" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <ul class="elementoEliminado">
+                <li >
+                  <h3>Donde encontrarnos:</h3>
+                </li>
+                <li>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.280521126353!2d-58.41670908479234!3d-34.69810388043507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccf84b4cd84f%3A0x268105e6be936242!2sAutoservicio%20%22El%20Farol%22!5e0!3m2!1ses-419!2sar!4v1661994739306!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+              </ul>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

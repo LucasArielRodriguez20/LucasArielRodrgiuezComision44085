@@ -1,0 +1,56 @@
+@media(max-width:450px) {
+
+    //index
+    .logoFarol {
+        height: 10vh;
+        width: 18vw;
+    }
+
+    .container-fluid {
+        a {
+            margin-left: 2vw !important;
+        }
+    }
+
+    //index fin
+    //contacto
+    .miCuentaContacto {
+        a {
+            width: 28vw;
+            font-size: 4vw;
+        }
+    }
+
+    //contacto fin
+    //Busqueda de articulos
+    .miCuentaBusqueda {
+        a {
+            font-size: 3vw;
+            width: 35vw;
+        }
+    }
+
+    .carritoBusqueda {
+        a {
+            width: 35vw;
+        }
+    }
+
+    //Busqueda de articulos Fin
+    //nuevo usuario
+    .nuevoUsuarioImg{
+        div{
+            img{
+                width: 35vw;
+            }
+        }
+    }
+    //nuevo usuario fin
+    //error page
+    .bg-error {
+        width: 30vw;
+        height: 6vh;
+    }
+
+    //erro fin
+}

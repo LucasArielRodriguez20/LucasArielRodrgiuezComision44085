@@ -1,8 +1,14 @@
 @import "var.scss";
+
 /*Responsive*/
 @media(max-width:768px) {
 
     /*Barra de navegación responsive*/
+    .container-fluid {
+        a {
+            margin-left: 2vw !important;
+        }
+    }
     nav {
         display: flex;
         padding: 0%;
@@ -55,7 +61,7 @@
     }
 
     .carrousel {
-        height: auto;
+        height: 80vw;
         margin-top: 2vh;
         border-top: none;
 
@@ -85,11 +91,14 @@
             margin: 2vh;
 
             a {
-                background-color: $colorBlanco;
-                height: auto;
-                width: auto;
+                background-color: #f9f7f7;
+                height: 11vh;
+                width: 28vw;
                 border-radius: 2vh;
                 padding: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img {
                     height: 6vh;
@@ -102,7 +111,8 @@
     /*Fin barra*/
     //BoostrapResponsive
     .logoFarol {
-        width: 12vw;
+        height: 10vh;
+        width: 18vw;
     }
 
     .opcionesDeBusqueda {
@@ -316,14 +326,21 @@
             margin-top: 2vh;
         }
     }
-    .nuevoUsuarioImg{
+
+    .nuevoUsuarioImg {
         width: 80%;
-        div{
+
+        div {
             width: 100%;
             margin-right: 0;
+            img{
+                width: 35vw;
+            }
         }
     }
-
+    .fs-3vw{
+        font-size: 3vw !important;
+    }
     /*Nuevo Usuario fin*/
     /*Busqueda*/
     /*Barra Busqueda*/
@@ -398,9 +415,10 @@
     /*Busqueda fin*/
     /*Ingreso Usuarios*/
     /*Comienzo Ingreso Usuario barra*/
-    .mr-5{
+    .mr-5 {
         margin-right: 0;
     }
+
     /*Fin Ingreso Usuario barra*/
     .usuarioSection {
         form input {
@@ -411,7 +429,8 @@
         div {
             border-radius: 7vh;
             height: 25vh;
-            img{
+
+            img {
                 height: 20vh;
                 width: 30vw;
             }
@@ -494,5 +513,42 @@
         border-radius: 3vh;
     }
 
+    .redes {
+        ul {
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            li {
+                a {
+                    img {
+                        width: 28vw;
+                        height: 6vh;
+                    }
+                }
+            }
+        }
+
+        .otrasSecciones {
+            li {
+                a {
+                    width: 33vw;
+                    height: 7vh;
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+
+    .elementoEliminado {
+        display: none !important;
+    }
+
     /* fin footer responsive*/
+    //error page
+    .bg-error {
+        width: 24vw;
+        height: 6vh;
+    }
+
+    //erro fin
 }
